@@ -15,4 +15,5 @@ pub(crate) enum CollisionLayer {
     Terrain,
     CameraObstacle,
     Sensor,
+    Orb
 }

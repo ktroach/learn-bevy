@@ -1,7 +1,11 @@
 use crate::{
-    level_instantiation::on_spawn::util::MeshAssetsExt, shader::ShaderMaterials, GameState,
+    level_instantiation::on_spawn::util::MeshAssetsExt, 
+    shader::ShaderMaterials, 
+    movement::physics::CollisionLayer,
+    GameState, 
 };
-use bevy::prelude::*;
+use bevy::{ecs::entity, prelude::*};
+use bevy_xpbd_3d::{components::CollisionLayers, prelude::Collider};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Eq, PartialEq, Component, Reflect, Serialize, Deserialize, Default)]
@@ -33,16 +37,20 @@ fn spawn(
                 ..default()
             },))
             .with_children(|parent| {
-                parent.spawn((PointLightBundle {
+                parent.spawn((
+                    PointLightBundle {
                     point_light: PointLight {
-                        intensity: 10_000.,
+                        intensity: 1_000.,
                         radius: 1.,
-                        color: Color::rgb(0.5, 0.1, 0.),
+                        color: Color::rgb(57.1, 255.1, 20.1),
                         shadows_enabled: true,
                         ..default()
                     },
                     ..default()
-                },));
+                },
+                Collider::cylinder(2., 5.),
+                CollisionLayers::new([CollisionLayer::Sensor], [CollisionLayer::Player]),
+            ));
             });
     }
 }

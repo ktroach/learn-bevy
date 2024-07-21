@@ -76,12 +76,12 @@ fn fragment(in: VertexOutput) -> @location(0) vec4<f32> {
 
     // Increase contrast
     // => Face in the center of the sphere have normals pointing to the camera, which makes them brighter
-    let glow = pow(n_dot_v, 10.) * 50.;
+    let glow = pow(n_dot_v, 10.) * 580.;
 
     let black = vec3(0., 0., 0.);
-    let orange = vec3(0.5, 0.1, 0.);
+    let green = vec3(57., 255., 20.);
     // The higher glow is, the more orange the face becomes
-    let color = mix(black, orange, glow);
+    let color = mix(black, green, glow);
 
     // Only the R channel of a shifted normal
     // The shift is arbitrary in nature. Its function is to make it more interesting,
@@ -93,14 +93,14 @@ fn fragment(in: VertexOutput) -> @location(0) vec4<f32> {
 
 
     // This n is shifted a bit stochastically so that refraction is heterogenous
-    let bumped_n = n + bump * 2.;
+    let bumped_n = n + bump * 2.2;
     // refract image like a glass ball would
-    let refraction = get_texture_sample(own_refract(-v, bumped_n, 1./1.52)).rgb;
+    let refraction = get_texture_sample(own_refract(-v, bumped_n, 1./1.23)).rgb;
 
     let alpha = textureSample(texture, texture_sampler, in.uv).a;
 
     /// The RGB of the refraction is multiplied with a gradient from center (orange) to edge (black)
     /// The RGB of the reflection is multiplied with a fresnel on the edge, making it only appear as a "sheen"
-    let total = color * refraction + reflection * (fresnel + 0.05);
+    let total = color * refraction + reflection * (fresnel + 0.04);
     return vec4<f32>(total, alpha);
 }
