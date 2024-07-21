@@ -40,7 +40,7 @@ pub(super) fn plugin(app: &mut App) {
     );
 }
 
-/// Used for ordering systems across Foxtrot.
+/// Used for ordering systems across learnBevy.
 /// Note that the order of items of this enum is not necessarily the order of execution.
 /// Look at [`crate::system_set::plugin`] for the actual order used.
 #[derive(Debug, Hash, PartialEq, Eq, Clone, SystemSet)]

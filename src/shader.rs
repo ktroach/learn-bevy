@@ -5,7 +5,7 @@ use bevy::prelude::*;
 
 use bevy::render::render_resource::{AsBindGroup, ShaderRef};
 
-/// Handles instantiation of shaders. The shaders can be found in the [`shaders`](https://github.com/janhohenheim/foxtrot/tree/main/assets/shaders) directory.
+/// Handles instantiation of shaders. The shaders can be found in the [`shaders`](https://github.com/janhohenheim/learnBevy/tree/main/assets/shaders) directory.
 /// Shaders are stored in [`Material`]s which can be used on objects by attaching a `Handle<Material>` to an entity.
 /// The handles can be stored and retrieved in the [`ShaderMaterials`] resource.
 pub(super) fn plugin(app: &mut App) {
@@ -31,7 +31,7 @@ fn setup_shader(
 }
 
 #[derive(AsBindGroup, Debug, Clone, Asset, TypePath)]
-/// Material for [`glowy.wgsl`](https://github.com/janhohenheim/foxtrot/blob/main/assets/shaders/glowy.wgsl).
+/// Material for [`glowy.wgsl`](https://github.com/janhohenheim/learnBevy/blob/main/assets/shaders/glowy.wgsl).
 pub(crate) struct GlowyMaterial {
     #[texture(0)]
     #[sampler(1)]

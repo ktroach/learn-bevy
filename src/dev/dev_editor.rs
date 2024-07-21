@@ -24,7 +24,7 @@ pub(crate) struct DevEditorWindow;
 
 impl EditorWindow for DevEditorWindow {
     type State = DevEditorState;
-    const NAME: &'static str = "Foxtrot Dev";
+    const NAME: &'static str = "learnBevy Dev";
     const DEFAULT_SIZE: (f32, f32) = (200., 150.);
     fn ui(
         _world: &mut World,

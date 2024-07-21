@@ -3,11 +3,11 @@
 // This is not a library, so we don't need to worry about intra-doc links
 #![allow(rustdoc::private_intra_doc_links)]
 
-//! Foxtrot is split into many plugins with their own set of responsibilities.
+//! learnBevy is split into many plugins with their own set of responsibilities.
 //! This is an organizational measure and not meant to be imply that you can turn them on or off at will,
 //! since the plugins are interdependent.  
 //! Instead, decide for yourself which features you like and which one's you don't and simply trim the code accordingly.
-//! Feel free to [file an issue](https://github.com/janhohenheim/foxtrot/issues/new) if you need help!
+//! Feel free to [file an issue](https://github.com/janhohenheim/learnBevy/issues/new) if you need help!
 //! The docs are organized such that you can click through the plugins to explore the systems at play.
 
 use bevy::prelude::*;
@@ -39,10 +39,10 @@ enum GameState {
     Menu,
 }
 
-/// Main entrypoint for Foxtrot.
+/// Main entrypoint for learnBevy.
 ///
 /// The top-level plugins are:
-/// - [`system_set::plugin`]: Sets up the system set used to order systems across Foxtrot.
+/// - [`system_set::plugin`]: Sets up the system set used to order systems across learnBevy.
 /// - [`bevy_config::plugin`]: Sets up the bevy configuration.
 /// - [`menu::plugin`]: Handles the menu.
 /// - [`movement::plugin`]: Handles the movement of entities.

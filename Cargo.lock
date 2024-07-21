@@ -2400,38 +2400,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "foxtrot"
-version = "0.5.0"
-dependencies = [
- "anyhow",
- "bevy",
- "bevy-tnua",
- "bevy-tnua-xpbd3d",
- "bevy_asset_loader",
- "bevy_atmosphere",
- "bevy_common_assets",
- "bevy_dolly",
- "bevy_editor_pls",
- "bevy_egui",
- "bevy_gltf_blueprints",
- "bevy_hanabi",
- "bevy_kira_audio",
- "bevy_registry_export",
- "bevy_xpbd_3d",
- "bevy_yarnspinner",
- "bevy_yarnspinner_example_dialogue_view",
- "embed-resource",
- "image 0.24.9",
- "iyes_progress",
- "leafwing-input-manager",
- "log",
- "oxidized_navigation",
- "serde",
- "warbler_grass",
- "winit",
-]
-
-[[package]]
 name = "fsevent-sys"
 version = "4.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3195,6 +3163,38 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.66",
+]
+
+[[package]]
+name = "learnBevy"
+version = "0.5.0"
+dependencies = [
+ "anyhow",
+ "bevy",
+ "bevy-tnua",
+ "bevy-tnua-xpbd3d",
+ "bevy_asset_loader",
+ "bevy_atmosphere",
+ "bevy_common_assets",
+ "bevy_dolly",
+ "bevy_editor_pls",
+ "bevy_egui",
+ "bevy_gltf_blueprints",
+ "bevy_hanabi",
+ "bevy_kira_audio",
+ "bevy_registry_export",
+ "bevy_xpbd_3d",
+ "bevy_yarnspinner",
+ "bevy_yarnspinner_example_dialogue_view",
+ "embed-resource",
+ "image 0.24.9",
+ "iyes_progress",
+ "leafwing-input-manager",
+ "log",
+ "oxidized_navigation",
+ "serde",
+ "warbler_grass",
+ "winit",
 ]
 
 [[package]]

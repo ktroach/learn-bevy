@@ -1421,7 +1421,7 @@
       "type": "object",
       "typeInfo": "Enum"
     },
-    "bevy_asset::handle::Handle<foxtrot::file_system_interaction::config::GameConfig>": {
+    "bevy_asset::handle::Handle<learnBevy::file_system_interaction::config::GameConfig>": {
       "isComponent": true,
       "isResource": false,
       "oneOf": [
@@ -1444,7 +1444,7 @@
           "prefixItems": [
             {
               "type": {
-                "$ref": "#/$defs/bevy_asset::id::AssetId<foxtrot::file_system_interaction::config::GameConfig>"
+                "$ref": "#/$defs/bevy_asset::id::AssetId<learnBevy::file_system_interaction::config::GameConfig>"
               }
             }
           ],
@@ -1455,11 +1455,11 @@
         }
       ],
       "short_name": "Handle<GameConfig>",
-      "title": "bevy_asset::handle::Handle<foxtrot::file_system_interaction::config::GameConfig>",
+      "title": "bevy_asset::handle::Handle<learnBevy::file_system_interaction::config::GameConfig>",
       "type": "object",
       "typeInfo": "Enum"
     },
-    "bevy_asset::handle::Handle<foxtrot::shader::GlowyMaterial>": {
+    "bevy_asset::handle::Handle<learnBevy::shader::GlowyMaterial>": {
       "isComponent": true,
       "isResource": false,
       "oneOf": [
@@ -1482,7 +1482,7 @@
           "prefixItems": [
             {
               "type": {
-                "$ref": "#/$defs/bevy_asset::id::AssetId<foxtrot::shader::GlowyMaterial>"
+                "$ref": "#/$defs/bevy_asset::id::AssetId<learnBevy::shader::GlowyMaterial>"
               }
             }
           ],
@@ -1493,7 +1493,7 @@
         }
       ],
       "short_name": "Handle<GlowyMaterial>",
-      "title": "bevy_asset::handle::Handle<foxtrot::shader::GlowyMaterial>",
+      "title": "bevy_asset::handle::Handle<learnBevy::shader::GlowyMaterial>",
       "type": "object",
       "typeInfo": "Enum"
     },
@@ -2915,7 +2915,7 @@
       "type": "object",
       "typeInfo": "Enum"
     },
-    "bevy_asset::id::AssetId<foxtrot::file_system_interaction::config::GameConfig>": {
+    "bevy_asset::id::AssetId<learnBevy::file_system_interaction::config::GameConfig>": {
       "isComponent": false,
       "isResource": false,
       "oneOf": [
@@ -2957,11 +2957,11 @@
         }
       ],
       "short_name": "AssetId<GameConfig>",
-      "title": "bevy_asset::id::AssetId<foxtrot::file_system_interaction::config::GameConfig>",
+      "title": "bevy_asset::id::AssetId<learnBevy::file_system_interaction::config::GameConfig>",
       "type": "object",
       "typeInfo": "Enum"
     },
-    "bevy_asset::id::AssetId<foxtrot::shader::GlowyMaterial>": {
+    "bevy_asset::id::AssetId<learnBevy::shader::GlowyMaterial>": {
       "isComponent": false,
       "isResource": false,
       "oneOf": [
@@ -3003,7 +3003,7 @@
         }
       ],
       "short_name": "AssetId<GlowyMaterial>",
-      "title": "bevy_asset::id::AssetId<foxtrot::shader::GlowyMaterial>",
+      "title": "bevy_asset::id::AssetId<learnBevy::shader::GlowyMaterial>",
       "type": "object",
       "typeInfo": "Enum"
     },
@@ -13309,327 +13309,6 @@
       "type": "float",
       "typeInfo": "Value"
     },
-    "foxtrot::level_instantiation::on_spawn::collider::Collider": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Collider",
-      "title": "foxtrot::level_instantiation::on_spawn::collider::Collider",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::level_instantiation::on_spawn::ground::Ground": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Ground",
-      "title": "foxtrot::level_instantiation::on_spawn::ground::Ground",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::level_instantiation::on_spawn::hidden::Hidden": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Hidden",
-      "title": "foxtrot::level_instantiation::on_spawn::hidden::Hidden",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::level_instantiation::on_spawn::npc::Npc": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Npc",
-      "title": "foxtrot::level_instantiation::on_spawn::npc::Npc",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::level_instantiation::on_spawn::orb::Orb": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Orb",
-      "title": "foxtrot::level_instantiation::on_spawn::orb::Orb",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::level_instantiation::on_spawn::player::Player": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "Player",
-      "title": "foxtrot::level_instantiation::on_spawn::player::Player",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::movement::character_controller::animation::CharacterAnimationNames": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {
-        "aerial": {
-          "type": {
-            "$ref": "#/$defs/alloc::string::String"
-          }
-        },
-        "idle": {
-          "type": {
-            "$ref": "#/$defs/alloc::string::String"
-          }
-        },
-        "walk": {
-          "type": {
-            "$ref": "#/$defs/alloc::string::String"
-          }
-        }
-      },
-      "required": [
-        "idle",
-        "walk",
-        "aerial"
-      ],
-      "short_name": "CharacterAnimationNames",
-      "title": "foxtrot::movement::character_controller::animation::CharacterAnimationNames",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::movement::character_controller::components::Jump": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {
-        "height": {
-          "type": {
-            "$ref": "#/$defs/f32"
-          }
-        },
-        "requested": {
-          "type": {
-            "$ref": "#/$defs/bool"
-          }
-        }
-      },
-      "required": [
-        "height",
-        "requested"
-      ],
-      "short_name": "Jump",
-      "title": "foxtrot::movement::character_controller::components::Jump",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::movement::character_controller::components::Walk": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {
-        "direction": {
-          "type": {
-            "$ref": "#/$defs/core::option::Option<glam::Vec3>"
-          }
-        },
-        "speed": {
-          "type": {
-            "$ref": "#/$defs/f32"
-          }
-        }
-      },
-      "required": [
-        "speed"
-      ],
-      "short_name": "Walk",
-      "title": "foxtrot::movement::character_controller::components::Walk",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::particles::SprintingParticle": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "SprintingParticle",
-      "title": "foxtrot::particles::SprintingParticle",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::player_control::actions::ActionsFrozen": {
-      "additionalProperties": false,
-      "isComponent": false,
-      "isResource": true,
-      "properties": {
-        "freeze_count": {
-          "type": {
-            "$ref": "#/$defs/usize"
-          }
-        }
-      },
-      "required": [
-        "freeze_count"
-      ],
-      "short_name": "ActionsFrozen",
-      "title": "foxtrot::player_control::actions::ActionsFrozen",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::player_control::actions::CameraAction": {
-      "isComponent": false,
-      "isResource": false,
-      "oneOf": [
-        "Orbit",
-        "Zoom"
-      ],
-      "short_name": "CameraAction",
-      "title": "foxtrot::player_control::actions::CameraAction",
-      "type": "string",
-      "typeInfo": "Enum"
-    },
-    "foxtrot::player_control::actions::PlayerAction": {
-      "isComponent": false,
-      "isResource": false,
-      "oneOf": [
-        "Move",
-        "Sprint",
-        "Jump",
-        "Interact"
-      ],
-      "short_name": "PlayerAction",
-      "title": "foxtrot::player_control::actions::PlayerAction",
-      "type": "string",
-      "typeInfo": "Enum"
-    },
-    "foxtrot::player_control::actions::UiAction": {
-      "isComponent": false,
-      "isResource": false,
-      "oneOf": [
-        "TogglePause"
-      ],
-      "short_name": "UiAction",
-      "title": "foxtrot::player_control::actions::UiAction",
-      "type": "string",
-      "typeInfo": "Enum"
-    },
-    "foxtrot::player_control::camera::IngameCamera": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {
-        "desired_distance": {
-          "type": {
-            "$ref": "#/$defs/f32"
-          }
-        },
-        "kind": {
-          "type": {
-            "$ref": "#/$defs/foxtrot::player_control::camera::IngameCameraKind"
-          }
-        },
-        "secondary_target": {
-          "type": {
-            "$ref": "#/$defs/core::option::Option<glam::Vec3>"
-          }
-        },
-        "target": {
-          "type": {
-            "$ref": "#/$defs/glam::Vec3"
-          }
-        }
-      },
-      "required": [
-        "target",
-        "desired_distance",
-        "kind"
-      ],
-      "short_name": "IngameCamera",
-      "title": "foxtrot::player_control::camera::IngameCamera",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::player_control::camera::IngameCameraKind": {
-      "isComponent": false,
-      "isResource": false,
-      "oneOf": [
-        "ThirdPerson",
-        "FirstPerson",
-        "FixedAngle"
-      ],
-      "short_name": "IngameCameraKind",
-      "title": "foxtrot::player_control::camera::IngameCameraKind",
-      "type": "string",
-      "typeInfo": "Enum"
-    },
-    "foxtrot::player_control::camera::ui::UiCamera": {
-      "additionalProperties": false,
-      "isComponent": true,
-      "isResource": false,
-      "properties": {},
-      "required": [],
-      "short_name": "UiCamera",
-      "title": "foxtrot::player_control::camera::ui::UiCamera",
-      "type": "object",
-      "typeInfo": "Struct"
-    },
-    "foxtrot::world_interaction::dialog::CurrentDialogTarget": {
-      "isComponent": false,
-      "isResource": true,
-      "items": false,
-      "prefixItems": [
-        {
-          "type": {
-            "$ref": "#/$defs/core::option::Option<bevy_ecs::entity::Entity>"
-          }
-        }
-      ],
-      "short_name": "CurrentDialogTarget",
-      "title": "foxtrot::world_interaction::dialog::CurrentDialogTarget",
-      "type": "array",
-      "typeInfo": "TupleStruct"
-    },
-    "foxtrot::world_interaction::dialog::YarnNode": {
-      "isComponent": true,
-      "isResource": false,
-      "items": false,
-      "prefixItems": [
-        {
-          "type": {
-            "$ref": "#/$defs/alloc::string::String"
-          }
-        }
-      ],
-      "short_name": "YarnNode",
-      "title": "foxtrot::world_interaction::dialog::YarnNode",
-      "type": "array",
-      "typeInfo": "TupleStruct"
-    },
-    "foxtrot::world_interaction::interaction_ui::InteractionOpportunity": {
-      "isComponent": false,
-      "isResource": true,
-      "items": false,
-      "prefixItems": [
-        {
-          "type": {
-            "$ref": "#/$defs/core::option::Option<bevy_ecs::entity::Entity>"
-          }
-        }
-      ],
-      "short_name": "InteractionOpportunity",
-      "title": "foxtrot::world_interaction::interaction_ui::InteractionOpportunity",
-      "type": "array",
-      "typeInfo": "TupleStruct"
-    },
     "glam::Affine2": {
       "additionalProperties": false,
       "isComponent": false,
@@ -14623,14 +14302,14 @@
       "type": "object",
       "typeInfo": "Struct"
     },
-    "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::CameraAction>": {
+    "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::CameraAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
       "properties": {
         "action_data": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::CameraAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::CameraAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -14638,18 +14317,18 @@
         "action_data"
       ],
       "short_name": "ActionState<CameraAction>",
-      "title": "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::CameraAction>",
+      "title": "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::CameraAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
-    "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::PlayerAction>": {
+    "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::PlayerAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
       "properties": {
         "action_data": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::PlayerAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::PlayerAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -14657,18 +14336,18 @@
         "action_data"
       ],
       "short_name": "ActionState<PlayerAction>",
-      "title": "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::PlayerAction>",
+      "title": "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::PlayerAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
-    "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::UiAction>": {
+    "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::UiAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
       "properties": {
         "action_data": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::UiAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::UiAction, leafwing_input_manager::action_state::ActionData, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -14676,7 +14355,7 @@
         "action_data"
       ],
       "short_name": "ActionState<UiAction>",
-      "title": "leafwing_input_manager::action_state::ActionState<foxtrot::player_control::actions::UiAction>",
+      "title": "leafwing_input_manager::action_state::ActionState<learnBevy::player_control::actions::UiAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
@@ -15004,7 +14683,7 @@
       "type": "string",
       "typeInfo": "Enum"
     },
-    "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::CameraAction>": {
+    "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::CameraAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
@@ -15016,7 +14695,7 @@
         },
         "map": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::CameraAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::CameraAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -15024,11 +14703,11 @@
         "map"
       ],
       "short_name": "InputMap<CameraAction>",
-      "title": "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::CameraAction>",
+      "title": "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::CameraAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
-    "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::PlayerAction>": {
+    "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::PlayerAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
@@ -15040,7 +14719,7 @@
         },
         "map": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::PlayerAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::PlayerAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -15048,11 +14727,11 @@
         "map"
       ],
       "short_name": "InputMap<PlayerAction>",
-      "title": "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::PlayerAction>",
+      "title": "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::PlayerAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
-    "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::UiAction>": {
+    "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::UiAction>": {
       "additionalProperties": false,
       "isComponent": false,
       "isResource": false,
@@ -15064,7 +14743,7 @@
         },
         "map": {
           "type": {
-            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<foxtrot::player_control::actions::UiAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
+            "$ref": "#/$defs/bevy_utils::hashbrown::HashMap<learnBevy::player_control::actions::UiAction, alloc::vec::Vec<leafwing_input_manager::user_input::UserInput>, bevy_utils::hashbrown::hash_map::DefaultHashBuilder>"
           }
         }
       },
@@ -15072,7 +14751,7 @@
         "map"
       ],
       "short_name": "InputMap<UiAction>",
-      "title": "leafwing_input_manager::input_map::InputMap<foxtrot::player_control::actions::UiAction>",
+      "title": "leafwing_input_manager::input_map::InputMap<learnBevy::player_control::actions::UiAction>",
       "type": "object",
       "typeInfo": "Struct"
     },
@@ -15307,6 +14986,327 @@
       "title": "leafwing_input_manager::user_input::UserInput",
       "type": "object",
       "typeInfo": "Enum"
+    },
+    "learnBevy::level_instantiation::on_spawn::collider::Collider": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Collider",
+      "title": "learnBevy::level_instantiation::on_spawn::collider::Collider",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::level_instantiation::on_spawn::ground::Ground": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Ground",
+      "title": "learnBevy::level_instantiation::on_spawn::ground::Ground",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::level_instantiation::on_spawn::hidden::Hidden": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Hidden",
+      "title": "learnBevy::level_instantiation::on_spawn::hidden::Hidden",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::level_instantiation::on_spawn::npc::Npc": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Npc",
+      "title": "learnBevy::level_instantiation::on_spawn::npc::Npc",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::level_instantiation::on_spawn::orb::Orb": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Orb",
+      "title": "learnBevy::level_instantiation::on_spawn::orb::Orb",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::level_instantiation::on_spawn::player::Player": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "Player",
+      "title": "learnBevy::level_instantiation::on_spawn::player::Player",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::movement::character_controller::animation::CharacterAnimationNames": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {
+        "aerial": {
+          "type": {
+            "$ref": "#/$defs/alloc::string::String"
+          }
+        },
+        "idle": {
+          "type": {
+            "$ref": "#/$defs/alloc::string::String"
+          }
+        },
+        "walk": {
+          "type": {
+            "$ref": "#/$defs/alloc::string::String"
+          }
+        }
+      },
+      "required": [
+        "idle",
+        "walk",
+        "aerial"
+      ],
+      "short_name": "CharacterAnimationNames",
+      "title": "learnBevy::movement::character_controller::animation::CharacterAnimationNames",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::movement::character_controller::components::Jump": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {
+        "height": {
+          "type": {
+            "$ref": "#/$defs/f32"
+          }
+        },
+        "requested": {
+          "type": {
+            "$ref": "#/$defs/bool"
+          }
+        }
+      },
+      "required": [
+        "height",
+        "requested"
+      ],
+      "short_name": "Jump",
+      "title": "learnBevy::movement::character_controller::components::Jump",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::movement::character_controller::components::Walk": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {
+        "direction": {
+          "type": {
+            "$ref": "#/$defs/core::option::Option<glam::Vec3>"
+          }
+        },
+        "speed": {
+          "type": {
+            "$ref": "#/$defs/f32"
+          }
+        }
+      },
+      "required": [
+        "speed"
+      ],
+      "short_name": "Walk",
+      "title": "learnBevy::movement::character_controller::components::Walk",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::particles::SprintingParticle": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "SprintingParticle",
+      "title": "learnBevy::particles::SprintingParticle",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::player_control::actions::ActionsFrozen": {
+      "additionalProperties": false,
+      "isComponent": false,
+      "isResource": true,
+      "properties": {
+        "freeze_count": {
+          "type": {
+            "$ref": "#/$defs/usize"
+          }
+        }
+      },
+      "required": [
+        "freeze_count"
+      ],
+      "short_name": "ActionsFrozen",
+      "title": "learnBevy::player_control::actions::ActionsFrozen",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::player_control::actions::CameraAction": {
+      "isComponent": false,
+      "isResource": false,
+      "oneOf": [
+        "Orbit",
+        "Zoom"
+      ],
+      "short_name": "CameraAction",
+      "title": "learnBevy::player_control::actions::CameraAction",
+      "type": "string",
+      "typeInfo": "Enum"
+    },
+    "learnBevy::player_control::actions::PlayerAction": {
+      "isComponent": false,
+      "isResource": false,
+      "oneOf": [
+        "Move",
+        "Sprint",
+        "Jump",
+        "Interact"
+      ],
+      "short_name": "PlayerAction",
+      "title": "learnBevy::player_control::actions::PlayerAction",
+      "type": "string",
+      "typeInfo": "Enum"
+    },
+    "learnBevy::player_control::actions::UiAction": {
+      "isComponent": false,
+      "isResource": false,
+      "oneOf": [
+        "TogglePause"
+      ],
+      "short_name": "UiAction",
+      "title": "learnBevy::player_control::actions::UiAction",
+      "type": "string",
+      "typeInfo": "Enum"
+    },
+    "learnBevy::player_control::camera::IngameCamera": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {
+        "desired_distance": {
+          "type": {
+            "$ref": "#/$defs/f32"
+          }
+        },
+        "kind": {
+          "type": {
+            "$ref": "#/$defs/learnBevy::player_control::camera::IngameCameraKind"
+          }
+        },
+        "secondary_target": {
+          "type": {
+            "$ref": "#/$defs/core::option::Option<glam::Vec3>"
+          }
+        },
+        "target": {
+          "type": {
+            "$ref": "#/$defs/glam::Vec3"
+          }
+        }
+      },
+      "required": [
+        "target",
+        "desired_distance",
+        "kind"
+      ],
+      "short_name": "IngameCamera",
+      "title": "learnBevy::player_control::camera::IngameCamera",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::player_control::camera::IngameCameraKind": {
+      "isComponent": false,
+      "isResource": false,
+      "oneOf": [
+        "ThirdPerson",
+        "FirstPerson",
+        "FixedAngle"
+      ],
+      "short_name": "IngameCameraKind",
+      "title": "learnBevy::player_control::camera::IngameCameraKind",
+      "type": "string",
+      "typeInfo": "Enum"
+    },
+    "learnBevy::player_control::camera::ui::UiCamera": {
+      "additionalProperties": false,
+      "isComponent": true,
+      "isResource": false,
+      "properties": {},
+      "required": [],
+      "short_name": "UiCamera",
+      "title": "learnBevy::player_control::camera::ui::UiCamera",
+      "type": "object",
+      "typeInfo": "Struct"
+    },
+    "learnBevy::world_interaction::dialog::CurrentDialogTarget": {
+      "isComponent": false,
+      "isResource": true,
+      "items": false,
+      "prefixItems": [
+        {
+          "type": {
+            "$ref": "#/$defs/core::option::Option<bevy_ecs::entity::Entity>"
+          }
+        }
+      ],
+      "short_name": "CurrentDialogTarget",
+      "title": "learnBevy::world_interaction::dialog::CurrentDialogTarget",
+      "type": "array",
+      "typeInfo": "TupleStruct"
+    },
+    "learnBevy::world_interaction::dialog::YarnNode": {
+      "isComponent": true,
+      "isResource": false,
+      "items": false,
+      "prefixItems": [
+        {
+          "type": {
+            "$ref": "#/$defs/alloc::string::String"
+          }
+        }
+      ],
+      "short_name": "YarnNode",
+      "title": "learnBevy::world_interaction::dialog::YarnNode",
+      "type": "array",
+      "typeInfo": "TupleStruct"
+    },
+    "learnBevy::world_interaction::interaction_ui::InteractionOpportunity": {
+      "isComponent": false,
+      "isResource": true,
+      "items": false,
+      "prefixItems": [
+        {
+          "type": {
+            "$ref": "#/$defs/core::option::Option<bevy_ecs::entity::Entity>"
+          }
+        }
+      ],
+      "short_name": "InteractionOpportunity",
+      "title": "learnBevy::world_interaction::interaction_ui::InteractionOpportunity",
+      "type": "array",
+      "typeInfo": "TupleStruct"
     },
     "oxidized_navigation::NavMeshAffector": {
       "additionalProperties": false,

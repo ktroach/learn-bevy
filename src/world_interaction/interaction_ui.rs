@@ -80,6 +80,9 @@ fn is_facing_target(
     camera_transform: Transform,
     camera: &IngameCamera,
 ) -> bool {
+    #[cfg(feature = "tracing")]
+    let _span = info_span!("is_facing_target").entered();
+
     if camera.kind == IngameCameraKind::FixedAngle {
         return true;
     }
@@ -107,12 +110,12 @@ fn display_interaction_prompt(
 
     let (entity, dialog_target) = dialog_target_query.get(opportunity).unwrap();
     egui::Window::new("Interaction")
-        .collapsible(false)
-        .title_bar(false)
+        .collapsible(true)
+        .title_bar(true)
         .auto_sized()
         .fixed_pos(egui::Pos2::new(window.width() / 2., window.height() / 2.))
         .show(egui_contexts.ctx_mut(), |ui| {
-            ui.label("E: Talk");
+            ui.label("Press E to Interact");
         });
     for actions in actions.iter() {
         if actions.just_pressed(&PlayerAction::Interact) {

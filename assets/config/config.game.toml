@@ -33,5 +33,5 @@ zoom_in_smoothing = 0.2
 zoom_out_smoothing = 1.2
 
 [player]
-sprint_effect_speed_threshold = 8.1
+sprint_effect_speed_threshold = 2.1
 

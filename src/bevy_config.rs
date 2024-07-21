@@ -9,7 +9,7 @@ pub(super) fn plugin(app: &mut App) {
     app.add_plugins(
         DefaultPlugins.set(WindowPlugin {
             primary_window: Window {
-                title: "Foxtrot".to_string(),
+                title: "Learn Bevy".to_string(),
                 // This will spawn an invisible window
                 // The window will be made visible in the make_visible() system after 3 frames.
                 // This is useful when you want to avoid the white window that shows up before the GPU is ready to render the app.

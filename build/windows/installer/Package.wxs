@@ -1,6 +1,6 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
     <Package
-        Name="Foxtrot"
+        Name="learnBevy"
         Manufacturer="Jan Hohenheim"
         Version="0.5.0"
 
@@ -34,7 +34,7 @@
         <!-- Installs the actual files -->
         <ComponentGroup Id="MainComponent" Directory="INSTALLFOLDER">
             <Component>
-                <File Id="Executable" Source="..\..\..\target\release\foxtrot.exe" Vital="true" />
+                <File Id="Executable" Source="..\..\..\target\release\learnBevy.exe" Vital="true" />
             </Component>
         </ComponentGroup>
 

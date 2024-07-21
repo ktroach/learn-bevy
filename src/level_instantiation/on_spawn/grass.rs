@@ -21,7 +21,7 @@ fn spawn(
     grass_assets: Res<GrassAssets>,
 ) {
     for transform in ground.iter() {
-        let density_map = DensityMap::new(grass_assets.density_map.clone(), 5.);
+        let density_map = DensityMap::new(grass_assets.density_map.clone(), 1.);
         let offset = Vec3::new(transform.scale.x, 0., transform.scale.z);
         let aabb = Aabb::from_min_max(-offset, offset);
         let grass_transform =
@@ -34,7 +34,7 @@ fn spawn(
             },
             aabb,
             spatial: SpatialBundle::from_transform(grass_transform),
-            height: WarblerHeight::Uniform(1.2),
+            height: WarblerHeight::Uniform(0.5),
             ..default()
         });
     }

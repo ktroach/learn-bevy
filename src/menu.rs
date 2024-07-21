@@ -21,7 +21,7 @@ fn setup_menu(mut egui_contexts: EguiContexts, mut next_state: ResMut<NextState<
         set_menu_style(ui.style_mut());
         ui.vertical_centered_justified(|ui| {
             ui.add_space(50.);
-            ui.heading("Foxtrot");
+            ui.heading("Learn Bevy");
             ui.separator();
             ui.add_space(50.);
             if ui.button("Play").clicked() {
